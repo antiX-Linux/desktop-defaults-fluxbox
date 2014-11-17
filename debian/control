@@ -1,0 +1,16 @@
+Source: desktop-defaults-fluxbox-antix
+Section: antix
+Priority: optional
+Maintainer: anticapitalista <antiX@operamail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: http://antix.mepis.org
+
+Package: desktop-defaults-fluxbox-antix
+Architecture: all
+Depends: fluxbox, desktop-defaults-core-antix (>= 0.4.0), desktop-defaults-base-antix (>= 0.4.0)
+Recommends: slim
+Breaks: desktop-defaults-base-antix (<< 0.4.0), desktop-defaults-core-antix (<< 0.4.0), desktop-defaults-full-antix (<< 0.4.0)
+Replaces: desktop-defaults-base-antix (<< 0.4.0), desktop-defaults-core-antix (<< 0.4.0), desktop-defaults-full-antix (<< 0.4.0)
+Description: desktop defaults for antiX fluxbox.
+

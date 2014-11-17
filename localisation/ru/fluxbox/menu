@@ -1,0 +1,116 @@
+[begin] (--antiX--)
+    [exec] (Терминал) {desktop-defaults-run -t}
+    [exec] (Главная) {desktop-defaults-run -fm}
+    [separator]
+    [exec] (Браузер) {desktop-defaults-run -b}
+    [exec] (редакторы) {desktop-defaults-run -te}
+    [separator]
+    [submenu] (Personal)
+        [begin] (Personal)
+        [include] (~/.fluxbox/personal)
+    [end]
+    [submenu] (Приложения)
+        [begin] (Приложения)
+        [include] (~/.fluxbox/menu-applications)
+    [end]
+    [submenu] (Update Menus)
+        [exec] (Update Personal Menu) {desktop-menu --menu-file='/etc/xdg/menus/TCM-MENU.menu' --write-out --write-out-file='personal'}
+        [exec] (Update Local App Menu) {desktop-menu --write-out}
+        [exec] (Update Global App Menu) {desktop-menu --write-out-global}
+    [end]
+    [separator]
+    [submenu] (Рабочий стол)
+        [submenu] (Alternate Desktops)
+            [begin] (Alternate Desktops)
+            [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
+        [end]
+        [separator]
+        [exec] (Add Desktop) {add-desktop}
+        [exec] (Wallpaper) {wallpaper.py}
+        [exec] (GTK Theme) {lxappearance}
+        [exec] (Desktop Defaults) {desktop-defaults-set}
+        [exec] (Window Manager) {edit-wm-settings}
+        [exec] (Session Settings) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf}
+        [exec] (Session Settings (Global)) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf}
+        [separator]
+        [exec] (RoxPanel on/off) {paneltoggle.sh}
+        [exec] (Conky on/off) {conkytoggle.sh}
+    [end]
+    [separator]
+    [submenu] (Инстументы)
+        [exec] (Nano) {desktop-defaults-run -t nano}
+        [exec] (Ted) {/usr/bin/Ted}
+        [exec] (Rox Filer) {rox}
+        [exec] (SpaceFM) {spacefm}
+        [exec] (Поиск) {spacefm --find-files}
+        [exec] (MC File Manager) {desktop-defaults-run -t mc}
+        [exec] (Завершить) {xkill}
+        [exec] (Process Viewer) {desktop-defaults-run -t htop}
+        [exec] (Информация о системе) {inxi-gui}
+        [exec] (Add .desktop Files) {ktsuss adddesktop.sh}
+    [end]
+    [exec] (Центр управления) {antixcc.sh}
+    [separator]
+    [submenu] (Помощь)
+        [submenu] (antiX)
+            [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
+            [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
+            [separator]
+            [exec] (Rox Manual) {desktop-defaults-run -b http://rox.sourceforge.net/Manual/Manual/Manual.html}
+        [end]
+        [separator]
+        [submenu] (Fluxbox)
+            [exec] (Fluxbox Документация) {desktop-defaults-run -b http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Fluxbox FAQ) {desktop-defaults-run -b http://fluxbox-wiki.org/index.php/Faqs}
+            [exec] (Fluxbox Wiki) {desktop-defaults-run -b http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
+            [separator]
+            [exec] (Arch Wiki) {desktop-defaults-run -b http://wiki.archlinux.org/index.php/Fluxbox}
+        [end]
+        [submenu] (IceWM)
+            [exec] (IceWM FAQ) {desktop-defaults-run -b http://www.icewm.org/FAQ/}
+            [exec] (IceWM Manual) {desktop-defaults-run -b http://www.icewm.org/manual/}
+            [separator]
+            [exec] (OSNews) {desktop-defaults-run -b http://www.osnews.com/story/7774/IceWM--The-Cool-Window-Manager/}
+        [end]
+        [submenu] (JWM)
+            [exec] (Homepage) {desktop-defaults-run -b http://joewing.net/programs/jwm/}
+            [exec] (Arch Wiki) {desktop-defaults-run -b https://wiki.archlinux.org/index.php/JWM}
+            [exec] (WM - Puppy-Linux) {desktop-defaults-run -b http://puppy.b0x.me/wiki/doku.php?id=jwm}
+        [end]
+        [separator]
+        [submenu] (Приложения)
+            [exec] (Firewall) {desktop-defaults-run -b https://help.ubuntu.com/community/Gufw}
+            [exec] (mtPaint) {desktop-defaults-run -b http://mtpaint.sourceforge.net/handbook/}
+            [exec] (Partimage) {desktop-defaults-run -b http://www.partimage.org/Partimage-manual_Usage}
+        [end]
+        [submenu] (Страницы по руководству)
+            [exec] (Backup) {desktop-defaults-run -t man luckybackup}
+            [exec] (Irssi) {desktop-defaults-run -t man irssi}
+            [exec] (mc) {desktop-defaults-run -t man mc}
+            [exec] (mocp) {desktop-defaults-run -t man mocp}
+            [exec] (Nano) {desktop-defaults-run -t man nano}
+            [exec] (Rss/Atom) {desktop-defaults-run -t man newsbeuter}
+            [exec] (Терминал) {desktop-defaults-run -t man urxvt}
+            [exec] (Torrent) {desktop-defaults-run -t man rtorrent}
+        [end]
+    [end]
+    [exec] (Выполнить) {gexec}
+    [submenu] (Fluxbox)
+        [exec] (Update Local Menu) {desktop-menu --write-out}
+        [exec] (Update global Menu) {desktop-menu --write-out-global}
+        [separator]
+        [config] (Configuration)
+        [submenu] (Styles)
+            [stylesdir] (~/.fluxbox/styles)
+            [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
+        [end]
+        [exec] (Wallpapers) {wallpaper.py}
+        [separator]
+        [workspaces] (Workspaces)
+        [separator]
+        [reconfig] (Reconfigure)
+        [restart] (Restart)
+    [end]
+    [exec] (Выход) {desktop-session-exit}
+    [exec] (Установка) {gksu antixsources.sh}
+[end]
