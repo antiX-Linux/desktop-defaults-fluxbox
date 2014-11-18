@@ -31,7 +31,7 @@
         [exec] (Desktop Defaults) {desktop-defaults-set}
         [exec] (Window Manager) {edit-wm-settings}
         [exec] (Session Settings) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf}
-        [exec] (Session Settings (Global)) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf}
+        [exec] (Session Settings Global) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf}
         [separator]
         [exec] (RoxPanel si/no) {paneltoggle.sh}
         [exec] (Conky si/no) {conkytoggle.sh}

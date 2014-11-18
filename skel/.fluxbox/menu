@@ -31,7 +31,7 @@
         [exec] (Desktop Defaults) {desktop-defaults-set} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
         [exec] (Window Manager) {edit-wm-settings} </usr/share/icons/gTangish-2.0a1/32x32/places/user-desktop.png>
         [exec] (Session Settings) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
-        [exec] (Session Settings (Global)) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
+        [exec] (Session Settings Global) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
         [separator]
         [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-panel.png>
         [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/gTangish-2.0a1/32x32/apps/utilities-system-monitor.png>
