@@ -1,89 +1,89 @@
 [begin] (--antiX--)
-    [exec] (Терминал) {desktop-defaults-run -t}
-    [exec] (Лична фасцикла) {desktop-defaults-run -fm}
+    [exec] (Терминал) {desktop-defaults-run -t} </usr/share/pixmaps/roxterm.xpm>
+    [exec] (Лична фасцикла) {desktop-defaults-run -fm} </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
     [separator]
-    [exec] (Броусер) {desktop-defaults-run -b}
-    [exec] (Уредник) {desktop-defaults-run -te}
+    [exec] (Броусер) {desktop-defaults-run -b} </usr/share/pixmaps/iceweasel.xpm>
+    [exec] (Уредник) {desktop-defaults-run -te} </usr/share/icons/gTangish-2.0a1/32x32/apps/accessories-text-editor.png>
     [separator]
-    [submenu] (Personal)
+    [submenu] (Personal) </usr/share/icons/gTangish-2.0a1/32x32/apps/blam.png>
         [begin] (Personal)
         [include] (~/.fluxbox/personal)
     [end]
-    [submenu] (Програми)
+    [submenu] (Програми) </usr/share/icons/gTangish-2.0a1/32x32/apps/blam.png>
         [begin] (Програми)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [submenu] (Update Menus)
-        [exec] (Update Personal Menu) {desktop-menu --menu-file='/etc/xdg/menus/TCM-MENU.menu' --write-out --write-out-file='personal'}
-        [exec] (Update Local App Menu) {desktop-menu --write-out}
-        [exec] (Update Global App Menu) {desktop-menu --write-out-global}
+    [submenu] (Update Menus) </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
+        [exec] (Update Personal Menu) {desktop-menu --menu-file='/etc/xdg/menus/TCM-MENU.menu' --write-out --write-out-file='personal'} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
+        [exec] (Update Local App Menu) {desktop-menu --write-out} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
+        [exec] (Update Global App Menu) {desktop-menu --write-out-global} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
     [end]
     [separator]
-    [submenu] (Радна Површ)
-        [submenu] (Alternate Desktops)
+    [submenu] (Радна Површ) </usr/share/icons/gTangish-2.0a1/32x32/places/user-desktop.png>
+        [submenu] (Alternate Desktops) </usr/share/icons/gTangish-2.0a1/32x32/places/user-desktop.png>
             [begin] (Alternate Desktops)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
         [separator]
-        [exec] (Add Desktop) {add-desktop}
-        [exec] (Wallpaper) {wallpaper.py}
-        [exec] (GTK Theme) {lxappearance}
-        [exec] (Desktop Defaults) {desktop-defaults-set}
-        [exec] (Window Manager) {edit-wm-settings}
-        [exec] (Session Settings) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf}
-        [exec] (Session Settings Global) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf}
+        [exec] (Add Desktop) {add-desktop} </usr/share/icons/gTangish-2.0a1/32x32/places/user-desktop.png>
+        [exec] (Wallpaper) {wallpaper.py} </usr/share/icons/gTangish-2.0a1/32x32/apps/preferences-desktop-wallpaper.png>
+        [exec] (GTK Theme) {lxappearance} </usr/share/icons/gTangish-2.0a1/32x32/apps/preferences-desktop-wallpaper.png>
+        [exec] (Desktop Defaults) {desktop-defaults-set} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png>
+        [exec] (Window Manager) {edit-wm-settings} </usr/share/icons/gTangish-2.0a1/32x32/places/user-desktop.png>
+        [exec] (Session Settings) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
+        [exec] (Session Settings Global) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
         [separator]
-        [exec] (RoxPanel on/off) {paneltoggle.sh}
-        [exec] (Conky on/off) {conkytoggle.sh}
+        [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-panel.png>
+        [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/gTangish-2.0a1/32x32/apps/utilities-system-monitor.png>
     [end]
     [separator]
-    [submenu] (Алат)
-        [exec] (Nano) {desktop-defaults-run -t nano}
-        [exec] (Ted) {/usr/bin/Ted}
-        [exec] (Rox Filer) {rox}
-        [exec] (SpaceFM) {spacefm}
-        [exec] (Претрага) {spacefm --find-files}
-        [exec] (MC File Manager) {desktop-defaults-run -t mc}
-        [exec] (App Killer) {xkill}
-        [exec] (Process Viewer) {desktop-defaults-run -t htop}
-        [exec] (Информације о систему) {inxi-gui}
-        [exec] (Add .desktop Files) {ktsuss adddesktop.sh}
+    [submenu] (Алат) </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-system.png>
+        [exec] (Nano) {desktop-defaults-run -t nano} </usr/share/icons/gTangish-2.0a1/32x32/apps/utilities-terminal.png>
+        [exec] (Ted) {/usr/bin/Ted} </usr/share/Ted/Ted.png>
+        [exec] (Rox Filer) {rox} </usr/share/icons/antiX/rox-filer.png>
+        [exec] (SpaceFM) {spacefm} </usr/share/icons/hicolor/48x48/apps/spacefm.png>
+        [exec] (Претрага) {spacefm --find-files} </usr/share/icons/gTangish-2.0a1/32x32/actions/edit-find.png>
+        [exec] (MC File Manager) {desktop-defaults-run -t mc} </usr/share/icons/hicolor/64x64/apps/MidnightCommander.png>
+        [exec] (App Killer) {xkill} </usr/share/icons/gTangish-2.0a1/32x32/actions/dialog-cancel.png>
+        [exec] (Process Viewer) {desktop-defaults-run -t htop} </usr/share/pixmaps/htop.png>
+        [exec] (Информације о систему) {inxi-gui} </usr/share/icons/gTangish-2.0a1/32x32/devices/computer.png>
+        [exec] (Add .desktop Files) {ktsuss adddesktop.sh} </usr/share/icons/gTangish-2.0a1/32x32/actions/gtk-edit.png>
     [end]
-    [exec] (Контролни Центар) {antixcc.sh}
+    [exec] (Контролни Центар) {antixcc.sh} </usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png>
     [separator]
-    [submenu] (Помоћ)
-        [submenu] (antiX)
+    [submenu] (Помоћ) </usr/share/icons/gTangish-2.0a1/32x32/apps/help-browser.png>
+        [submenu] (antiX) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
             [exec] (Rox Manual) {desktop-defaults-run -b http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
-        [submenu] (Fluxbox)
+        [submenu] (Fluxbox) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (Fluxbox Docs) {desktop-defaults-run -b http://fluxbox.sourceforge.net/docbook/en/html/}
             [exec] (Fluxbox FAQ) {desktop-defaults-run -b http://fluxbox-wiki.org/index.php/Faqs}
             [exec] (Fluxbox Wiki) {desktop-defaults-run -b http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
             [separator]
             [exec] (Arch Wiki) {desktop-defaults-run -b http://wiki.archlinux.org/index.php/Fluxbox}
         [end]
-        [submenu] (IceWM)
+        [submenu] (IceWM) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (IceWM FAQ) {desktop-defaults-run -b http://www.icewm.org/FAQ/}
             [exec] (IceWM Manual) {desktop-defaults-run -b http://www.icewm.org/manual/}
             [separator]
             [exec] (OSNews) {desktop-defaults-run -b http://www.osnews.com/story/7774/IceWM--The-Cool-Window-Manager/}
         [end]
-        [submenu] (JWM)
+        [submenu] (JWM) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (Homepage) {desktop-defaults-run -b http://joewing.net/programs/jwm/}
             [exec] (Arch Wiki) {desktop-defaults-run -b https://wiki.archlinux.org/index.php/JWM}
             [exec] (WM - Puppy-Linux) {desktop-defaults-run -b http://puppy.b0x.me/wiki/doku.php?id=jwm}
         [end]
         [separator]
-        [submenu] (Програми)
+        [submenu] (Програми) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (Firewall) {desktop-defaults-run -b https://help.ubuntu.com/community/Gufw}
             [exec] (mtPaint) {desktop-defaults-run -b http://mtpaint.sourceforge.net/handbook/}
             [exec] (Partimage) {desktop-defaults-run -b http://www.partimage.org/Partimage-manual_Usage}
         [end]
-        [submenu] (Man Pages)
+        [submenu] (Man Pages) </usr/share/icons/gTangish-2.0a1/32x32/places/folder.png>
             [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}
@@ -96,16 +96,11 @@
     [end]
     [exec] (Трчање) {gexec}
     [submenu] (Fluxbox Settings)
-        [exec] (Update Local Menu) {desktop-menu --write-out}
-        [exec] (Update global Menu) {desktop-menu --write-out-global}
-        [separator]
         [config] (Configuration)
         [submenu] (Styles)
             [stylesdir] (~/.fluxbox/styles)
             [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
         [end]
-        [exec] (Wallpapers) {wallpaper.py}
-        [separator]
         [workspaces] (Workspaces)
         [separator]
         [reconfig] (Reconfigure)

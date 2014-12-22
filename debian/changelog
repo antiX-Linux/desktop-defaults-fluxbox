@@ -1,3 +1,17 @@
+desktop-defaults-fluxbox-antix (0.2.4) unstable; urgency=low
+ 
+  * Added icons to main menu for all localised versions.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 22 Dec 2014 11:20:00 +0200
+
+
+desktop-defaults-fluxbox-antix (0.2.3) unstable; urgency=low
+ 
+  * Removed duplicate entries from menu.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 21 Dec 2014 20:23:00 +0200
+
+
 desktop-defaults-fluxbox-antix (0.2.2) unstable; urgency=low
  
   * Better keys file.

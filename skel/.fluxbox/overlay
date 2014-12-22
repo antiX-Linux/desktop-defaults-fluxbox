@@ -1,9 +1,9 @@
 ## Sample file - antiX ##
 # add rounded corners to the menu
-menu.roundCorners: TopRight TopLeft BottomRight BottomLeft
+#menu.roundCorners: TopRight TopLeft BottomRight BottomLeft
 
 # add rounded corners to the windows
-window.roundCorners: TopRight TopLeft BottomRight BottomLeft
+#window.roundCorners: TopRight TopLeft BottomRight BottomLeft
 
 # add rounded corners to the toolbar (only applies to the top corners)
 #toolbar.shaped: true

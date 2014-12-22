@@ -96,16 +96,11 @@
     [end]
     [exec] (Run) {gexec}
     [submenu] (Fluxbox Settings)
-        [exec] (Update Local Menu) {desktop-menu --write-out}
-        [exec] (Update global Menu) {desktop-menu --write-out-global}
-        [separator]
         [config] (Configuration)
         [submenu] (Styles) <Style>
             [stylesdir] (~/.fluxbox/styles)
             [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
         [end]
-        [exec] (Wallpapers) {wallpaper.py}
-        [separator]
         [workspaces] (Workspaces)
         [separator]
         [reconfig] (Reconfigure)
