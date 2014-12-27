@@ -1,11 +1,11 @@
 
-[exec] (SpaceFM) {spacefm } </usr/share/icons/hicolor/48x48/apps/spacefm.png>
-[exec] (Claws Mail) {claws-mail } </usr/share/pixmaps/claws-mail.png>
-[exec] (Iceweasel) {iceweasel } </usr/share/icons/hicolor/32x32/apps/iceweasel.png>
-[exec] (ROXTerm) {roxterm} </usr/share/icons/hicolor/scalable/apps/roxterm.svg>
-[exec] (Leafpad) {leafpad } </usr/share/icons/hicolor/32x32/apps/leafpad.png>
-[exec] (Mirage) {mirage } </usr/share/pixmaps/mirage.png>
+[exec] (SpaceFM) {spacefm} </usr/share/icons/hicolor/48x48/apps/spacefm.png>
+[exec] (Claws Mail) {claws-mail} </usr/share/pixmaps/claws-mail.png>
+[exec] (Iceweasel) {iceweasel} </usr/share/icons/hicolor/32x32/apps/iceweasel.png>
+[exec] (ROXTerm) {roxterm} </usr/share/pixmaps/roxterm.xpm>
+[exec] (Leafpad) {leafpad} </usr/share/icons/hicolor/32x32/apps/leafpad.png>
+[exec] (Mirage) {mirage} </usr/share/pixmaps/mirage.png>
 [exec] (xmms) {xmms} </usr/share/icons/xmms.png>
-[exec] (GNOME MPlayer) {gnome-mplayer } </usr/share/icons/hicolor/32x32/apps/gnome-mplayer.png>
+[exec] (GNOME MPlayer) {gnome-mplayer} </usr/share/icons/hicolor/32x32/apps/gnome-mplayer.png>
 [separator]
 

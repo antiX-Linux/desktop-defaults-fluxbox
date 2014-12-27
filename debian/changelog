@@ -1,3 +1,10 @@
+desktop-defaults-fluxbox-antix (0.2.5) unstable; urgency=low
+ 
+  * Minor edits to fluxbox menu.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 24 Dec 2014 14:16:00 +0200
+
+
 desktop-defaults-fluxbox-antix (0.2.4) unstable; urgency=low
  
   * Added icons to main menu for all localised versions.
