@@ -1,3 +1,39 @@
+desktop-defaults-fluxbox-antix (0.3.2) unstable; urgency=low
+ 
+  * Alternate renamed to Other in menu
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 30 May 2015 12:19:00 +0200
+
+
+desktop-defaults-fluxbox-antix (0.3.1) unstable; urgency=low
+ 
+  * streamed menu
+  * set opaqueMove to false (to reduce CPU usage)
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 24 Apr 2015 18:15:00 +0200
+
+
+desktop-defaults-fluxbox-antix (0.3.0) unstable; urgency=low
+ 
+  * wingrid added to keys file
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 15 Apr 2015 13:20:00 +0200
+
+
+desktop-defaults-fluxbox-antix (0.2.9) unstable; urgency=low
+ 
+  * Removed toram-eject, persist-config, setxkbmap from startup
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 31 Mar 2015 13:14:00 +0200
+
+
+desktop-defaults-fluxbox-antix (0.2.8) unstable; urgency=low
+ 
+  * Removed icewm and jwm links from menu.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 11 Mar 2015 19:39:00 +0200
+
+
 desktop-defaults-fluxbox-antix (0.2.7) unstable; urgency=low
  
   * Trimmed menu.

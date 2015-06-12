@@ -13,23 +13,6 @@
         [begin] (Toepassingen)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [submenu] (Opdrachtregel) </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
-        [submenu] (Multimedia) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-multimedia.png>
-            [exec] (CD/DVD Writer) {desktop-defaults-run -t cdw} </usr/share/icons/Faenza-Cupertino-mini/devices/32/media-cdrom.png>
-            [exec] (Muziekspeler) {desktop-defaults-run -t mocp} </usr/share/icons/Faenza-Cupertino-mini/apps/32/rhythmbox.png>
-        [end]
-        [submenu] (Netwerk) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-internet.png>
-            [exec] (Alpine Mail) {desktop-defaults-run -t alpine} </usr/share/icons/Faenza-Cupertino-mini/apps/32/evolution.png>
-            [exec] (Browser elinks) {desktop-defaults-run -t elinks http://antiX.mepis.com} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
-            [exec] (Chatten) {desktop-defaults-run -t irssi} </usr/share/icons/Faenza-Cupertino-mini/apps/32/xchat.png>
-            [exec] (RSS/Atom-lezer) {desktop-defaults-run -t newsbeuter -r} </usr/share/icons/Faenza-Cupertino-mini/apps/32/liferea.png>
-            [exec] (rTorrent) {desktop-defaults-run -t rtorrent} </usr/share/icons/Faenza-Cupertino-mini/apps/32/deluge.png>
-        [end]
-        [submenu] (Kantoor) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-office.png>
-            [exec] (Organizer) {desktop-defaults-run -t calcurse} </usr/share/icons/Faenza-Cupertino-mini/apps/32/evolution-calendar.png>
-            [exec] (Word) {desktop-defaults-run -t wordgrinder} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
-        [end]
-    [end]
     [exec] (Menu Updaten) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Desktop) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
@@ -37,27 +20,11 @@
             [begin] (Alternatieve Desktop)</usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
-        [separator]
-        [exec] (Voeg Desktop toe) {add-desktop} </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [exec] (Desktopachtergrond) {wallpaper.py} </usr/share/icons/Faenza-Cupertino-mini/apps/32/preferences-desktop-wallpaper.png>
-        [exec] (GTK Theme) {lxappearance} </usr/share/icons/Faenza-Cupertino-mini/apps/32/preferences-desktop-theme.png>
-        [exec] (Desktop standaardinstellingen) {desktop-defaults-set} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-settings-default-applications.png>
-        [exec] (Sessie instellingen) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf} </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [exec] (Algemene sessie instellingen) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf} </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [separator]
         [exec] (RoxPanel aan/uit) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
         [exec] (Conky aan/uit) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
-    [submenu] (Gereedschap) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [exec] (Nano) {desktop-defaults-run -t nano} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-terminal.png>
-        [exec] (Ted) {/usr/bin/Ted} </usr/share/Ted/Ted.png>
-        [exec] (Zoeken) {spacefm --find-files} </usr/share/icons/Faenza-Cupertino-mini/apps/48/spacefm-find.png>
-        [exec] (MC File Manager) {desktop-defaults-run -t mc} </usr/share/icons/hicolor/64x64/apps/MidnightCommander.png>
         [exec] (Afschieten) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
-        [exec] (Process bekijken) {desktop-defaults-run -t htop} </usr/share/icons/Faenza-Cupertino-mini/apps/32/htop.png>
-        [exec] (Systeem-informatie) {inxi-gui} </usr/share/icons/Faenza-Cupertino-mini/devices/32/computer.png>
-    [end]
     [exec] (Controle Centrum) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
     [separator]
     [submenu] (Help) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
@@ -74,17 +41,6 @@
             [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
             [separator]
             [exec] (Arch Wiki) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
-        [end]
-        [submenu] (IceWM) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (IceWM FAQ) {dillo http://www.icewm.org/FAQ/}
-            [exec] (IceWM Handleiding ) {dillo http://www.icewm.org/manual/}
-            [separator]
-            [exec] (OSNews) {dillo http://www.osnews.com/story/7774/IceWM--The-Cool-Window-Manager/}
-        [end]
-        [submenu] (JWM) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Homepage) {dillo http://joewing.net/programs/jwm/}
-            [exec] (Arch Wiki) {dillo https://wiki.archlinux.org/index.php/JWM}
-            [exec] (WM - Puppy-Linux) {dillo http://puppy.b0x.me/wiki/doku.php?id=jwm}
         [end]
         [separator]
         [submenu] (Toepassingen) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
@@ -115,5 +71,5 @@
         [restart] (Herstart)
     [end]
     [exec] (Afsluiten) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Installeren) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Installeren) {su-to-root -X -p demo -c antixsources.sh} </usr/share/icons/msystem.png>
 [end]

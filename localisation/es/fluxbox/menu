@@ -13,51 +13,18 @@
         [begin] (Aplicaciones)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [submenu] (Consola) </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
-        [submenu] (Multimedios) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-multimedia.png>
-            [exec] (Grabador de CD/DVD) {desktop-defaults-run -t cdw} </usr/share/icons/Faenza-Cupertino-mini/devices/32/media-cdrom.png>
-            [exec] (Música) {desktop-defaults-run -t mocp} </usr/share/icons/Faenza-Cupertino-mini/apps/32/rhythmbox.png>
-        [end]
-        [submenu] (Red) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-internet.png>
-            [exec] (Alpine Mail) {desktop-defaults-run -t alpine} </usr/share/icons/Faenza-Cupertino-mini/apps/32/evolution.png>
-            [exec] (Navegador) {desktop-defaults-run -t elinks http://antiX.mepis.com} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
-            [exec] (Irssi Chat) {desktop-defaults-run -t irssi} </usr/share/icons/Faenza-Cupertino-mini/apps/32/xchat.png>
-            [exec] (Lector de RSS/Atom) {desktop-defaults-run -t newsbeuter -r} </usr/share/icons/Faenza-Cupertino-mini/apps/32/liferea.png>
-            [exec] (rTorrent) {desktop-defaults-run -t rtorrent} </usr/share/icons/Faenza-Cupertino-mini/apps/32/deluge.png>
-        [end]
-        [submenu] (Oficina) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-office.png>
-            [exec] (Organizador) {desktop-defaults-run -t calcurse} </usr/share/icons/Faenza-Cupertino-mini/apps/32/evolution-calendar.png>
-            [exec] (Word) {desktop-defaults-run -t wordgrinder} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
-        [end]
-    [end]
-    [exec] (Actualizar Menus) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Actualizar menú) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Escritorio) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
         [submenu] (Alternar Escritorios) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
             [begin] (Alternar Escritorios)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
-        [separator]
-        [exec] (Agregar escritorio) {add-desktop} </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [exec] (Papel Tapiz) {wallpaper.py} </usr/share/icons/Faenza-Cupertino-mini/apps/32/preferences-desktop-wallpaper.png>
-        [exec] (Tema GTK) {lxappearance} </usr/share/icons/Faenza-Cupertino-mini/apps/32/preferences-desktop-theme.png>
-        [exec] (Escritorio defecto) {desktop-defaults-set} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-settings-default-applications.png>
-        [exec] (Ajustes de sesión) {desktop-defaults-run -te ~/.desktop-session/desktop-session.conf} </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [exec] (Ajustes de sesión globales) {desktop-defaults-run -r -te /etc/desktop-session/desktop-session.conf} </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [separator]
         [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
         [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
-    [submenu] (Herramientas) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [exec] (Nano) {desktop-defaults-run -t nano} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-terminal.png>
-        [exec] (Ted) {/usr/bin/Ted} </usr/share/Ted/Ted.png>
-        [exec] (Buscar) {spacefm --find-files} </usr/share/icons/Faenza-Cupertino-mini/apps/48/spacefm-find.png>
-        [exec] (MC File Manager) {desktop-defaults-run -t mc} </usr/share/icons/hicolor/64x64/apps/MidnightCommander.png>
         [exec] (Cancelar Apps) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
-        [exec] (Visor de procesos) {desktop-defaults-run -t htop} </usr/share/icons/Faenza-Cupertino-mini/apps/32/htop.png>
-        [exec] (Información del sistema) {inxi-gui} </usr/share/icons/Faenza-Cupertino-mini/devices/32/computer.png>
-    [end] 
     [exec] (Centro de Control) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
     [separator]
     [submenu] (Ayuda) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
@@ -74,17 +41,6 @@
             [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
             [separator]
             [exec] (Arch Wiki) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
-        [end]
-        [submenu] (IceWM) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Preguntas frecuentes) {dillo http://www.icewm.org/FAQ/}
-            [exec] (Manual de IceWM) {dillo http://www.icewm.org/manual/}
-            [separator]
-            [exec] (OSNews) {dillo http://www.osnews.com/story/7774/IceWM--The-Cool-Window-Manager/}
-        [end]
-        [submenu] (JWM) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Página de inicio) {dillo http://joewing.net/programs/jwm/}
-            [exec] (Arch Wiki) {dillo https://wiki.archlinux.org/index.php/JWM}
-            [exec] (WM - Puppy-Linux) {dillo http://puppy.b0x.me/wiki/doku.php?id=jwm}
         [end]
         [separator]
         [submenu] (Aplicaciones) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
@@ -115,5 +71,5 @@
         [restart] (Reiniciar)
     [end]
     [exec] (Salir) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Instalador) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Instalador) {su-to-root -X -p demo -c antixsources.sh} </usr/share/icons/msystem.png>
 [end]

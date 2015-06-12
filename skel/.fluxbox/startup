@@ -26,13 +26,6 @@
 # Change your keymap:
 # xmodmap ~/.Xmodmap
 
-# Set live keyboard
-#setxkbmap -layout "$XKBLAYOUT" -variant "$XKBVARIANT" -option "$XKBOPTIONS"
-
-#toram-eject
-(sleep 5 && toram-eject) &
-(sleep 5 && sudo persist-config --startup) &
-
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 

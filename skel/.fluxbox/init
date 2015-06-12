@@ -58,7 +58,7 @@ session.screen0.colPlacementDirection:	TopToBottom
 session.screen0.showwindowposition:	true
 session.screen0.workspaceNames:	Workspace Alpha,Workspace Beta,Workspace Gamma,Workspace Delta,Workspace Epsilon,
 session.screen0.maxDisableMove:	false
-session.screen0.opaqueMove:	true
+session.screen0.opaqueMove:	false
 session.screen0.focusModel:	ClickFocus
 session.screen0.defaultDeco:	NORMAL
 session.screen0.demandsAttentionTimeout:	500
@@ -92,7 +92,7 @@ session.keyFile:	~/.fluxbox/keys
 session.focusTabMinWidth:	0
 session.slitlistFile:	~/.fluxbox/slitlist
 session.ignoreBorder:	false
-session.styleFile:	/usr/share/fluxbox/styles/antiX
+session.styleFile:	/usr/share/fluxbox/styles/Radiant-antiX
 session.tabs:	true
 session.styleOverlay:	~/.fluxbox/overlay
 session.modKey:	Mod1

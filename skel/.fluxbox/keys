@@ -144,8 +144,8 @@ Control Mod4 F11 :TakeToWorkspace 11
 Control Mod4 F12 :TakeToWorkspace 12
 
 # Apps to keys
+Alt F2 :ExecCommand gexec
 Control Mod1 e :ExecCommand desktop-defaults-run -e
-Control Mod1 r :ExecCommand gexec
 Control Mod1 t :ExecCommand desktop-defaults-run -t
 Control Mod4 t :ExecCommand desktop-defaults-run -r -t
 Control Mod1 u :ExecCommand gftp
@@ -182,14 +182,15 @@ OnDesktop Mod1 Mouse5 :ExecCommand amixer -q set PCM 5-  #Decrease volume
 ##dmenu
 Mod4 Mod1 P :ExecCommand $(ls -lL `echo $PATH | tr : ' '` 2>/dev/null | awk 'NF>2 && $1 ~ /^[^d].*x/ {print $NF}' | sort -u | dmenu -b -fn 10x20 -nb black -nf white -sb grey -sf black)
 
-
-
-
-
-
-
-
-
-
-
+#wingrid
+Control 1 :ExecCommand wingrid-left.sh
+Control 2 :ExecCommand wingrid-right.sh
+Control 3 :ExecCommand wingrid-top.sh
+Control 4 :ExecCommand wingrid-bottom.sh
+Control 5 :ExecCommand wingrid-topleft.sh
+Control 6 :ExecCommand wingrid-topright.sh
+Control 7 :ExecCommand wingrid-bottomleft.sh
+Control 8 :ExecCommand wingrid-bottomright.sh
+Control 9 :ExecCommand wingrid-maximize.sh
+Control 0 :ExecCommand wingrid-close.sh
 
