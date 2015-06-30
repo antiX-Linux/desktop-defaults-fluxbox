@@ -1,3 +1,3 @@
 
-[exec] (Menu Manager) {sudo menu_manager.sh} </usr/share/pixmaps/menu_manager.png>
+[exec] (Personal Menu Help Video) {sh -c "printf 'https://www.youtube.com/watch?v=wwuTtjF6zS0' | xclip | streamlight.sh"} </usr/share/antiX/FAQ/images/antix-logo-3.png>
 

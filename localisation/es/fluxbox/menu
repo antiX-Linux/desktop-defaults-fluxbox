@@ -29,6 +29,7 @@
     [separator]
     [submenu] (Ayuda) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
         [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
             [exec] (Preguntas frecuentes) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (Live Tutorial) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
