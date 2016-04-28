@@ -72,5 +72,5 @@
         [restart] (Restartovat)
     [end]
     [exec] (Ukončit) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Instalovat) {su-to-root -X -p demo -c antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Instalovat) {gksu antixsources.sh} </usr/share/icons/msystem.png>
 [end]

@@ -92,7 +92,7 @@ session.keyFile:	~/.fluxbox/keys
 session.focusTabMinWidth:	0
 session.slitlistFile:	~/.fluxbox/slitlist
 session.ignoreBorder:	false
-session.styleFile:	/usr/share/fluxbox/styles/Radiant-antiX
+session.styleFile:	/usr/share/fluxbox/styles/Radiant-antiX-Medium
 session.tabs:	true
 session.styleOverlay:	~/.fluxbox/overlay
 session.modKey:	Mod1

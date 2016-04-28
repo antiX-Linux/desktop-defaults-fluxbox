@@ -72,5 +72,5 @@
         [restart] (Neustarten)
     [end]
     [exec] (Exit) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (antiX Installation) {su-to-root -X -p demo -c antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (antiX Installation) {gksu antixsources.sh} </usr/share/icons/msystem.png>
 [end]

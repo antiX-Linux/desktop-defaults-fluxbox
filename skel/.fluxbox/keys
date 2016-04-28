@@ -160,7 +160,7 @@ Control Mod1 f :ExecCommand desktop-defaults-run -fm
 Control Mod4 f :ExecCommand desktop-defaults-run -r -fm
 Control Mod1 g :ExecCommand desktop-defaults-run -te
 Control Mod4 g :ExecCommand desktop-defaults-run -r -te
-Control Mod1 h :ExecCommand desktop-defaults-run -b file://usr/share/antix/help-docs/index.html
+Control Mod1 h :ExecCommand desktop-defaults-run -b file:/usr/share/antiX/FAQ/index.html
 Control Mod1 k :ExecCommand desktop-session-exit
 Control Mod1 l :ExecCommand xlock
 Control Mod1 z :ExecCommand grsync
