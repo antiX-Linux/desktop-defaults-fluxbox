@@ -1,3 +1,9 @@
+desktop-defaults-fluxbox-antix (0.3.8) unstable; urgency=medium
+
+  * Use sudo to open antixsources.sh
+
+ -- anticapitalista <antix@operamail.com>  Fri, 29 Apr 2016 12:59:48 +0300
+
 desktop-defaults-fluxbox-antix (0.3.7) unstable; urgency=medium
 
   * Use gksu to open antixsources.sh 

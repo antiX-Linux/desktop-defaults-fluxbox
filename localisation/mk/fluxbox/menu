@@ -72,5 +72,5 @@
         [restart] (Restart)
     [end]
     [exec] (Напушти) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Инсталирај) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Инсталирај) {sudo antixsources.sh} </usr/share/icons/msystem.png>
 [end]

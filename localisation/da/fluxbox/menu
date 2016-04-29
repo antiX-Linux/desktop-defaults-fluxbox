@@ -72,5 +72,5 @@
         [restart] (Restart)
     [end]
     [exec] (Luk) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Installér) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Installér) {sudo antixsources.sh} </usr/share/icons/msystem.png>
 [end]

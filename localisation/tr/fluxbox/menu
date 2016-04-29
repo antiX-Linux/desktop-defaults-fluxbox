@@ -72,5 +72,5 @@
         [restart] (Restart)
     [end]
     [exec] (Çıkış) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Kurmak) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Kurmak) {sudo antixsources.sh} </usr/share/icons/msystem.png>
 [end]
