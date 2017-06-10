@@ -45,11 +45,10 @@
         [end]
         [separator]
         [submenu] (Applications) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Firewall) {dillo https://help.ubuntu.com/community/Gufw}
+            [exec] (Firewall) {dillo http://gufw.org/}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
         [submenu] (Man Pages) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}
             [exec] (mocp) {desktop-defaults-run -t man mocp}

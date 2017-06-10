@@ -1,3 +1,9 @@
+desktop-defaults-fluxbox-antix (0.3.9) unstable; urgency=medium
+
+  * Remove unwanted entries from main menu
+
+ -- anticapitalista <antix@operamail.com>  Tue, 07 Feb 2017 18:39:42 +0200
+
 desktop-defaults-fluxbox-antix (0.3.8) unstable; urgency=medium
 
   * Use sudo to open antixsources.sh

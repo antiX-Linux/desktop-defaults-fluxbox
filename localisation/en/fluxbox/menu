@@ -45,7 +45,7 @@
         [end]
         [separator]
         [submenu] (Applications) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Firewall) {dillo https://help.ubuntu.com/community/Gufw}
+            [exec] (Firewall) {dillo http://gufw.org/}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
         [submenu] (Man Pages) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
