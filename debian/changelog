@@ -1,3 +1,9 @@
+desktop-defaults-fluxbox-antix (0.3.10) unstable; urgency=medium
+
+  * Fixed lt menu
+
+ -- anticapitalista <antix@operamail.com>  Wed, 14 Jun 2017 19:15:12 +0300
+
 desktop-defaults-fluxbox-antix (0.3.9) unstable; urgency=medium
 
   * Remove unwanted entries from main menu
