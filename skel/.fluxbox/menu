@@ -38,8 +38,8 @@
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Fluxbox Docs) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
-            [exec] (Fluxbox FAQ) {dillo http://fluxbox-wiki.org/index.php/Faqs}
-            [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
+            [exec] (Fluxbox FAQ) {dillo http://fluxbox-wiki.org/FAQ_en.html}
+            [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/}
             [separator]
             [exec] (Arch Wiki) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
         [end]
@@ -49,6 +49,7 @@
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
         [submenu] (Man Pages) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}
             [exec] (mocp) {desktop-defaults-run -t man mocp}

@@ -1,3 +1,11 @@
+desktop-defaults-fluxbox-antix (0.3.11) unstable; urgency=medium
+
+  * Fixed broken links to fluxbox faq - thanks skidoo
+  * Set to 2 desktops for consistency with other wm
+  * Keys set to suggested
+
+ -- anticapitalista <antix@operamail.com>  Sat, 07 Oct 2017 16:06:55 +0300
+
 desktop-defaults-fluxbox-antix (0.3.10) unstable; urgency=medium
 
   * Fixed lt menu

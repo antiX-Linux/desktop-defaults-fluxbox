@@ -38,8 +38,8 @@
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Документи) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
-            [exec] (ЧаП) {dillo http://fluxbox-wiki.org/index.php/Faqs}
-            [exec] (Вікі) {dillo http://fluxbox-wiki.org/index.php/Fluxbox-wiki}
+            [exec] (ЧаП) {dillo http://fluxbox-wiki.org/FAQ_en.html}
+            [exec] (Вікі) {dillo http://fluxbox-wiki.org/}
             [separator]
             [exec] (Вікі з Arch) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
         [end]
