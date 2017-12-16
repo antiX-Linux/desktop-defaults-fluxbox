@@ -13,11 +13,11 @@
         [begin] (Applications)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Mise à jour Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Menu Mise à jour) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Bureau) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (autre bureau) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (autre bureau) 
+        [submenu] (autres bureaux) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (autres bureaux) 
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
         [exec] (RoxPanel marche/arrêt) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
@@ -33,7 +33,7 @@
             [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (antiX-live HowTo) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
-            [exec] (Manuel Rox) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+            [exec] (Manuel de ROX) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>

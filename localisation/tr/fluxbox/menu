@@ -5,23 +5,23 @@
     [exec] (Tarayıcı) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
     [exec] (Editör) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
     [separator]
-    [submenu] (Personal) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
-        [begin] (Personal)
+    [submenu] (Kişisel) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
+        [begin] (Kişisel)
         [include] (~/.fluxbox/personal)
     [end]
     [submenu] (Uygulamalar) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png>
         [begin] (Uygulamalar)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Update Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Menüyü Güncelle) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Masaüstü) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Other Desktops) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Other Desktops)
+        [submenu] (Diğer Masaüstleri) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Diğer Masaüstleri)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
-        [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
-        [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
+        [exec] (RoxPanel aç/kapa) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
+        [exec] (Conky açık/kapalı) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
         [exec] (App Killer) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
@@ -30,15 +30,15 @@
     [submenu] (Yardım) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
         [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
-            [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
-            [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
+            [exec] (antiX SSS) {dillo /usr/share/antiX/FAQ/index.html}
+            [exec] (antiX-çalışan Nasıl) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
-            [exec] (Rox Manual) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+            [exec] (Rox Kılavuzu) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Fluxbox Docs) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
-            [exec] (Fluxbox FAQ) {dillo http://fluxbox-wiki.org/FAQ_en.html}
+            [exec] (Fluxbox Belgeler) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Fluxbox SSS) {dillo http://fluxbox-wiki.org/FAQ_en.html}
             [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/}
             [separator]
             [exec] (Arch Wiki) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
@@ -48,8 +48,8 @@
             [exec] (Firewall) {dillo https://help.ubuntu.com/community/Gufw}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
-        [submenu] (Man Pages) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Backup) {desktop-defaults-run -t man luckybackup}
+        [submenu] (Kılavuz Sayfaları) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (Yedekle) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}
             [exec] (mocp) {desktop-defaults-run -t man mocp}
@@ -59,17 +59,17 @@
             [exec] (Torrent) {desktop-defaults-run -t man rtorrent}
         [end]
     [end]
-    [exec] (Run) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
-    [submenu] (Fluxbox Settings) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [config] (Configuration)
-        [submenu] (Styles)
+    [exec] (Çalıştır) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
+    [submenu] (Fluxbox Ayarları) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
+        [config] (Yapılandırma)
+        [submenu] (Biçimler)
             [stylesdir] (~/.fluxbox/styles)
-            [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
+            [stylesmenu] (Fluxbox Biçimleri) {/usr/share/fluxbox/styles}
         [end]
-        [workspaces] (Workspaces)
+        [workspaces] (Çalışma alanları)
         [separator]
-        [reconfig] (Reconfigure)
-        [restart] (Restart)
+        [reconfig] (Yeniden yapılandırma)
+        [restart] (Yeniden Başlat)
     [end]
     [exec] (Çıkış) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
     [exec] (Kurmak) {sudo antixsources.sh} </usr/share/icons/msystem.png>

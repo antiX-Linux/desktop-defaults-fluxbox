@@ -5,19 +5,19 @@
     [exec] (Navegador) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
     [exec] (Editor) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
     [separator]
-    [submenu] (Personal) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
-        [begin] (Personal)
+    [submenu] (Pessoal) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
+        [begin] (Pessoal)
         [include] (~/.fluxbox/personal)
     [end]
     [submenu] (Aplicativos) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png>
         [begin] (Aplicativos)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Update  Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Menu Actualizar) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
-    [submenu] (Área de trabalho) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Other Desktops) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Other Desktops)
+    [submenu] (Ambiente de trabalho) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+        [submenu] (Alternar entre Ambientes de trabalho) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Alternar entre Ambientes de trabalho)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
         [exec] (RoxPanel lig./desl.) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
@@ -37,7 +37,7 @@
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Fluxbox Docs) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Documentos do Fluxbox) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
             [exec] (Perguntas frequentes) {dillo http://fluxbox-wiki.org/FAQ_en.html}
             [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/}
             [separator]
@@ -61,16 +61,16 @@
     [end]
     [exec] (Executar) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
     [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [config] (Configuration)
-        [submenu] (Styles)
+        [config] (Configuração)
+        [submenu] (Estilos)
             [stylesdir] (~/.fluxbox/styles)
-            [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
+            [stylesmenu] (Estilos do Fluxbox) {/usr/share/fluxbox/styles}
         [end]
-        [workspaces] (Workspaces)
+        [workspaces] (Áreas de trabalho)
         [separator]
-        [reconfig] (Reconfigure)
-        [restart] (Restart)
+        [reconfig] (Reconfigurar)
+        [restart] (Reiniciar)
     [end]
     [exec] (Sair) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Instalar) {sudo antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (Instalador do antiX) {sudo antixsources.sh} </usr/share/icons/msystem.png>
 [end]

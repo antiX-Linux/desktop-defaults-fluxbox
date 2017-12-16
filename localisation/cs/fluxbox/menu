@@ -13,18 +13,18 @@
         [begin] (Aplikace)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Update Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Aktualizovat Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Pracovní plocha) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Other Desktops) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Other Desktops)
+        [submenu] (Alternativní plochy) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Alternativní plochy)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
-        [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
-        [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
+        [exec] (RoxPanel zapnut/vypnut) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
+        [exec] (Conky zapnut/vypnut) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
-        [exec] (Vražda) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
+        [exec] (Zabít aplikace) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
     [exec] (Ovládací centrum) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
     [separator]
     [submenu] (Nápověda) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
@@ -33,7 +33,7 @@
             [exec] (Často kladené otázky) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (Live Jak-na) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
-            [exec] (Rox Manual) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+            [exec] (Rox Manuál) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
@@ -48,7 +48,7 @@
             [exec] (Brána firewall) {dillo https://help.ubuntu.com/community/Gufw}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
-        [submenu] (Man stránky) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+        [submenu] (Stránky manuálu) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}

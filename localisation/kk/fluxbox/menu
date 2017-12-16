@@ -1,0 +1,76 @@
+[begin] (--antiX--)
+    [exec] (Терминал) {desktop-defaults-run -t} </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
+    [exec] (Файлдар басқарушысы) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
+    [separator]
+    [exec] (Веб браузері) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
+    [exec] (Түзетуші) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
+    [separator]
+    [submenu] (Жеке) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
+        [begin] (Жеке)
+        [include] (~/.fluxbox/personal)
+    [end]
+    [submenu] (Қолданбалар) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png>
+        [begin] (Қолданбалар)
+        [include] (~/.fluxbox/menu-applications)
+    [end]
+    [exec] (Мәзірді жаңарту) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [separator]
+    [submenu] (Жұмыс үстелі) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+        [submenu] (Басқа жұмыс үстелдер) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Басқа жұмыс үстелдер)
+            [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
+        [end]
+        [exec] (RoxPanel іске қосу/сөндіру) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
+        [exec] (Conky іске қосу/сөндіру) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
+    [end]
+    [separator]
+        [exec] (Қолданбаларды тоқтату) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
+    [exec] (Басқару орталығы) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
+    [separator]
+    [submenu] (Көмек) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
+        [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
+            [exec] (antiX ЖҚС) {dillo /usr/share/antiX/FAQ/index.html}
+            [exec] (antiX-live нұсқаулығы) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
+            [separator]
+            [exec] (Rox құжаттамасы) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+        [end]
+        [separator]
+        [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (құжаттамасы) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Fluxbox ЖҚС) {dillo http://fluxbox-wiki.org/FAQ_en.html}
+            [exec] (Fluxbox вики) {dillo http://fluxbox-wiki.org/}
+            [separator]
+            [exec] (Arch вики) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
+        [end]
+        [separator]
+        [submenu] (Қолданбалар) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (Желілік экран) {dillo http://gufw.org/}
+            [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
+        [end]
+        [submenu] (Man парақтары) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (Қор көшірме) {desktop-defaults-run -t man luckybackup}
+            [exec] (Irssi) {desktop-defaults-run -t man irssi}
+            [exec] (mc) {desktop-defaults-run -t man mc}
+            [exec] (mocp) {desktop-defaults-run -t man mocp}
+            [exec] (Nano) {desktop-defaults-run -t man nano}
+            [exec] (Rss/Atom) {desktop-defaults-run -t man newsbeuter}
+            [exec] (Терминал) {desktop-defaults-run -t man urxvt}
+            [exec] (Торрент) {desktop-defaults-run -t man rtorrent}
+        [end]
+    [end]
+    [exec] (Жөнелту) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
+    [submenu] (Fluxbox баптаулары) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
+        [config] (Баптаулар)
+        [submenu] (Стильдер) <Style>
+            [stylesdir] (~/.fluxbox/styles)
+            [stylesmenu] (Fluxbox стильдері) {/usr/share/fluxbox/styles}
+        [end]
+        [workspaces] (Жұмыс орындар)
+        [separator]
+        [reconfig] (Қайта баптау)
+        [restart] (Қайта қосу)
+    [end]
+    [exec] (Шығу) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
+    [exec] (antiX орнатқышы) {sudo antixsources.sh} </usr/share/icons/msystem.png>
+[end]

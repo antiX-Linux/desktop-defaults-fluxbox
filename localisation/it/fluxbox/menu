@@ -15,9 +15,9 @@
     [end]
     [exec] (Aggiorna Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
-    [submenu] (Scrivania) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Scrivania alternativi) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Scrivania alternativi)
+    [submenu] (Desktop) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+        [submenu] (Cambia Desktop) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Cambia Desktop)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
         [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
@@ -48,7 +48,7 @@
             [exec] (Firewall) {dillo https://help.ubuntu.com/community/Gufw}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
-        [submenu] (Pagine Manuale) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+        [submenu] (Pagine Man) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}

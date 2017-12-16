@@ -1,53 +1,54 @@
 [begin] (--antiX--)
     [exec] (Terminalas) {desktop-defaults-run -t} </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
-    [exec] (Namų aplankas) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
+    [exec] (Failų tvarkytuvė) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
     [separator]
-    [exec] (Naršyklė) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
+    [exec] (Saityno naršyklė) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
     [exec] (Redaktorius) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
     [separator]
-    [submenu] (Personal) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
-        [begin] (Personal)
+    [submenu] (Asmeniniai) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png>
+        [begin] (Asmeniniai)
         [include] (~/.fluxbox/personal)
     [end]
     [submenu] (Programos) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png>
         [begin] (Programos)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Update Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Atnaujinti meniu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Darbalaukis) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Other Desktops) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Other Desktops)
+        [submenu] (Alternatyvūs darbalaukiai) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Alternatyvūs darbalaukiai)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
         [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
         [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
-        [exec] (Process Viewer) {desktop-defaults-run -t htop} </usr/share/icons/Faenza-Cupertino-mini/apps/32/htop.png>
+    [exec] (App Killer) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
+    [exec] (Valdymo centras) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
     [separator]
     [submenu] (Pagalba) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
         [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
-            [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
+            [exec] (antiX DUK) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
-            [exec] (Rox Manual) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+            [exec] (Rox vadovas) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Fluxbox Docs) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
-            [exec] (Fluxbox FAQ) {dillo http://fluxbox-wiki.org/FAQ_en.html}
-            [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/}
+            [exec] (Fluxbox dokumentacija) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Fluxbox DUK) {dillo http://fluxbox-wiki.org/FAQ_en.html}
+            [exec] (Fluxbox vikis) {dillo http://fluxbox-wiki.org/}
             [separator]
-            [exec] (Arch Wiki) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
+            [exec] (Arch vikis) {dillo http://wiki.archlinux.org/index.php/Fluxbox}
         [end]
         [separator]
         [submenu] (Programos) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Firewall) {dillo https://help.ubuntu.com/community/Gufw}
             [exec] (Partimage) {dillo http://www.partimage.org/Partimage-manual_Usage}
         [end]
-        [submenu] (Man Pages) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+        [submenu] (Vadovo puslapiai) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (Backup) {desktop-defaults-run -t man luckybackup}
             [exec] (Irssi) {desktop-defaults-run -t man irssi}
             [exec] (mc) {desktop-defaults-run -t man mc}
@@ -58,18 +59,18 @@
             [exec] (Torrent) {desktop-defaults-run -t man rtorrent}
         [end]
     [end]
-    [exec] (Paleisti) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
-    [submenu] (Fluxbox Settings) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [config] (Configuration)
-        [submenu] (Styles)
+    [exec] (Vykdyti) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
+    [submenu] (Fluxbox nustatymai) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
+        [config] (Konfigūracija)
+        [submenu] (Stiliai)
             [stylesdir] (~/.fluxbox/styles)
-            [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
+            [stylesmenu] (Fluxbox stiliai) {/usr/share/fluxbox/styles}
         [end]
-        [workspaces] (Workspaces)
+        [workspaces] (Darbo sritys)
         [separator]
-        [reconfig] (Reconfigure)
-        [restart] (Restart)
+        [reconfig] (Iš naujo konfigūruoti)
+        [restart] (Paleisti iš naujo)
     [end]
-    [exec] (Baigti) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (Įdiegti) {sudo antixsources.sh} </usr/share/icons/msystem.png>
-[end] 
+    [exec] (Išeiti) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
+    [exec] (ĮantiX diegimo programa) {sudo antixsources.sh} </usr/share/icons/msystem.png>
+[end]

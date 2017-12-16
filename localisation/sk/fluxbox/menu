@@ -1,43 +1,43 @@
 [begin] (--antiX--)
     [exec] (Terminál) {desktop-defaults-run -t} </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
-    [exec] (Domovský priečinok) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
+    [exec] (Správca súborov) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
     [separator]
     [exec] (Prehliadač) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
     [exec] (Editor) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>
     [separator]
-    [submenu] (Personal) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png> 
-        [begin] (Personal)
+    [submenu] (Osobnél) </usr/share/icons/Faenza-Cupertino-mini/apps/32/config-users.png> 
+        [begin] (Osobné)
         [include] (~/.fluxbox/personal)
     [end]
     [submenu] (Aplikácie)  </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png>
         [begin] (Aplikácie)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Update Menu) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Aktualizovať Ponuku) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Pracovná plocha) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-        [submenu] (Other Desktops) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
-            [begin] (Other Desktops)
+        [submenu] (Zmeniť nastavenia plochy) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
+            [begin] (Zmeniť nastavenia plochy)
             [include] (/usr/share/desktop-session/wm-menus/fluxbox-wm-menu)
         [end]
-        [exec] (RoxPanel on/off) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
-        [exec] (Conky on/off) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
+        [exec] (RoxPanel zap/vyp) {paneltoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/gnome-panel.png>
+        [exec] (Conky zap/vyp) {conkytoggle.sh} </usr/share/icons/Faenza-Cupertino-mini/apps/32/utilities-system-monitor.png>
     [end]
     [separator]
-        [exec] (App Killer) {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
+        [exec] (Ukončenie aplikácií") {xkill} </usr/share/icons/Faenza-Cupertino-mini/actions/32/gtk-no.png>
     [exec] (Ovládací Panel) {antixcc.sh} </usr/share/icons/Faenza-Cupertino-mini/categories/32/preferences-desktop.png>
     [separator]
     [submenu] (Pomoc) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png> 
         [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
             [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
             [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
-            [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
+            [exec] (Ako na antiX-live) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
-            [exec] (Rox Manual) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
+            [exec] (Rox manuál) {dillo http://rox.sourceforge.net/Manual/Manual/Manual.html}
         [end]
         [separator]
         [submenu] (Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
-            [exec] (Fluxbox Docs) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
+            [exec] (Dokumentácia Fluxbox) {dillo http://fluxbox.sourceforge.net/docbook/en/html/}
             [exec] (Fluxbox FAQ) {dillo http://fluxbox-wiki.org/FAQ_en.html} 
             [exec] (Fluxbox Wiki) {dillo http://fluxbox-wiki.org/}
             [separator]
@@ -59,17 +59,16 @@
             [exec] (Torrent) {desktop-defaults-run -t man rtorrent}
         [end]
     [end]
-    [exec] (Beh) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
-    [submenu] (Fluxbox Settings) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
-        [config] (Configuration)
-        [submenu] (Styles)
+    [exec] (Spustiť) {gexec} </usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png>
+    [submenu] (Nastavenia Fluxbox) </usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-system.png>
+        [config] (Nastavenia)
+        [submenu] (Štýly)
             [stylesdir] (~/.fluxbox/styles)
-            [stylesmenu] (Fluxbox Styles) {/usr/share/fluxbox/styles}
+            [stylesmenu] (Štýly Fluxboxu) {/usr/share/fluxbox/styles}
         [end]
-        [workspaces] (Workspaces)
+        [workspaces] (Pracovné plochy)
         [separator]
-        [reconfig] (Reconfigure)
-        [restart] (Restart)
+        [reconfig] (Prekonfigurovať)
     [end]
     [exec] (Zatvoriť) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
     [exec] (Inštalovať) {sudo antixsources.sh} </usr/share/icons/msystem.png>

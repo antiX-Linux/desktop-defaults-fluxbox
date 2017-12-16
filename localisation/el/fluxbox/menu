@@ -13,7 +13,7 @@
         [begin] (Εφαρμογές)
         [include] (~/.fluxbox/menu-applications)
     [end]
-    [exec] (Ενημέρωση Μενού ) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
+    [exec] (Ενημέρωση Μενού) {desktop-menu --write-out-global} </usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png>
     [separator]
     [submenu] (Επιφάνεια εργασίας) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
         [submenu] (Άλλες Επιφάνειες εργασίας ) </usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png>
