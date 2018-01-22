@@ -1,6 +1,6 @@
 [begin] (--antiX--)
     [exec] (Terminal) {desktop-defaults-run -t} </usr/share/icons/Faenza-Cupertino-mini/apps/32/terminal.png>
-    [exec] (File Manager) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/apps/32/file-manager.png>
+    [exec] (File Manager) {desktop-defaults-run -fm} </usr/share/icons/Faenza-Cupertino-mini/places/32/user-home.png>
     [separator]
     [exec] (Web Browser) {desktop-defaults-run -b} </usr/share/icons/Faenza-Cupertino-mini/apps/32/web-browser.png>
     [exec] (Editor) {desktop-defaults-run -te} </usr/share/icons/Faenza-Cupertino-mini/apps/32/text-editor.png>

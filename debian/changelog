@@ -1,3 +1,9 @@
+desktop-defaults-fluxbox-antix (0.3.13) unstable; urgency=medium
+
+  * changed home icon in menu
+
+ -- anticapitalista <antix@operamail.com>  Sun, 21 Jan 2018 18:23:57 +0200
+
 desktop-defaults-fluxbox-antix (0.3.12) unstable; urgency=medium
 
   * Updated translations
